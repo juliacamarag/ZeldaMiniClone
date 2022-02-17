@@ -11,6 +11,8 @@ public class Spritesheet {
 	
 	public static BufferedImage player_front;
 	
+	public static BufferedImage tileWall;
+	
 	public Spritesheet() {
 		try {
 			spritesheet = ImageIO.read(getClass().getResource("/spritesheet.png"));
@@ -20,6 +22,7 @@ public class Spritesheet {
 		}
 		
 		player_front = Spritesheet.getSprite(0, 11, 16, 16);
+		tileWall = Spritesheet.getSprite(256,  241, 16, 16);
 	}
 	
 	public static BufferedImage getSprite(int x, int y, int width, int height) {
