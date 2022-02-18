@@ -20,7 +20,7 @@ public class Bullet extends Rectangle{
 	public void tick() {
 		x+=speed*dir;
 		frames++;
-		if(frames == 60) {
+		if(frames == 40 ) {
 			Player.bullets.remove(this);
 			return;
 		}
